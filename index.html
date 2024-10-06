@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-Frontend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="assests\logo-icon.png" alt="Logo" class="logo-icon">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li class="active">
+                    <img src="assests\home-icon.png" alt="Home Icon" class="icon"> 
+                    Home
+                </li>
+                <li>
+                    <img src="assests\analytics-icon.png" alt="Analytics Icon" class="icon"> 
+                    Analytics
+                </li>
+                <li>
+                    <img src="assests\engage-icon.png" alt="Engage Icon" class="icon"> 
+                    Engage
+                </li>
+                <li class="active-link">
+                    <img src="assests\demandwise-icon.png" alt="Demand Wise Icon" class="icon"> 
+                    Demand Wise
+                </li>
+                <li>
+                    <img src="assests\support-icon.png" alt="Support Icon" class="icon"> 
+                    Support
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Opportunity</h1>
+            <div class="date-range">
+                <input type="text" value="12 Jul 24 - 22 Jul 24" readonly>
+                <img src="calendar-icon.png" alt="Calendar">
+            </div>
+        </header>
+
+        <!-- Priority Focus Section -->
+        <section class="priority-focus">
+            <div class="focus-card">
+                <h2>Priority focus</h2>
+                <div class="focus-title">Today's Todo</div>
+                <div class="focus-value">7</div>
+            </div>
+            <div class="focus-card">
+                <div class="focus-title">Today's Closure Date</div>
+                <div class="focus-value">3</div>
+            </div>
+            <div class="focus-card">
+                <div class="focus-title">AI Suggested</div>
+                <div class="focus-value">4</div>
+            </div>
+       
+
+        <!-- Goals Achievements Section -->
+        <section class="goals-achievements">
+            <div class="goal-progress">
+                <h2>Goals Achievements</h2>
+                <div class="progress-ring">
+                    <span>80%</span>
+                </div>
+                <p>Of Total Goals Achieved</p>
+            </div>
+            <div class="goals-status">
+                <div>
+                    <span>15</span> Active Goals
+                </div>
+                <div>
+                    <span>11</span> Completed Goals
+                </div>
+            </div>
+        </section>
+    </section>
+
+        <!-- Metrics Section -->
+        <section class="metrics">
+            <div class="metric">
+                <span class="metric-value">500K</span>
+                <span class="metric-label">Sent</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">420K</span>
+                <span class="metric-label">Delivered</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">328K</span>
+                <span class="metric-label">Opened</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">135K</span>
+                <span class="metric-label">Engagement</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">14%</span>
+                <span class="metric-label">Engagement Rate</span>
+            </div>
+        </section>
+
+        <!-- Performance Trend Section -->
+        <section class="performance-trend">
+            <h2>Performance Trend</h2>
+            <canvas id="performanceChart"></canvas>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
